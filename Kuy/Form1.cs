@@ -20,7 +20,7 @@ using System.Numerics;
 using MathNet.Numerics;
 using MathNet.Numerics.IntegralTransforms;
 
-namespace FFTtheRealOne
+namespace Kuy
 {
     public partial class Form1 : Form
     {
@@ -1672,6 +1672,18 @@ namespace FFTtheRealOne
             model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Title = "Magnitude" }); // y axis
 
             return model;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 Synchronous = new Form2();
+            Synchronous.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 Asynchronous = new Form3();
+            Asynchronous.Show();
         }
     }
 }
